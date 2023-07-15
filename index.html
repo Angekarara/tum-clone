@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+						initial-scale=1.0"
+    />
+    <title>Setup Tailwind-CSS with Vite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header
+      class="flex justify-between bg-blue-950 text-white items-center p-5 w-full fixed z-10 top-0"
+    >
+      <div class="flex items-center gap-2">
+        <svg
+          width="33"
+          height="33"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="m14.5 18.717-2.5 2.88-2.5-2.88h5zM8.5 13v3h-3v-3h3zm5 0v3h-3v-3h3zm5 0v3h-3v-3h3zm-10-5v3h-3V8h3zm5 0v3h-3V8h3zm5 0v3h-3V8h3zm-10-5v3h-3V3h3zm5 0v3h-3V3h3zm5 0v3h-3V3h3z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          ></path>
+        </svg>
+        <svg
+          width="80"
+          height="42"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 73 38"
+        >
+          <path
+            d="M28 0v31h8V0h37v38h-7V7h-8v31h-7V7h-8v31H21V7h-7v31H7V7H0V0h28z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+      <div class="flex gap-7">
+        <div class="lg:flex gap-5 font-bold hidden">
+          <p>NEWS AND EVENTS</p>
+          <p>STUDIES</p>
+          <p>LIFELONG LEARNING</p>
+          <p>RESEARCH</p>
+          <p>INNOVATION</p>
+          <p>COMMUNITY</p>
+          <p>ABOUTTUM</p>
+        </div>
+        <div class="flex gap-3">
+          <p class="border-r px-3 text-gray-500">DE</p>
+          <p class="gap-1">EN</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+      </div>
+      <div class="lg:hidden">
+        <svg
+          class="nav-burger"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M2 13h20v-2H2v2zm0 7h16v-2H2v2zM2 4v2h20V4H2z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <section class="h-[700px] relative bg-[url('/un.jpg')] mt-16 z-1">
+      <div class="px-14 py-16">
+        <p class="text-6xl text-white">TUM. The entrepreneurial</p>
+        <p class="text-6xl text-white">University</p>
+        <p class="text-white py-4">
+          innovation through talent, excellence and responsibiity
+        </p>
+      </div>
+      <div
+        class="absolute bottom-9 right-10 bg-blue-500 w-10 h-10 p-2 text-white"
+      >
+        <svg
+          class="c-header__video-play"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="10 8 16 12 10 16 10 8"></polygon>
+        </svg>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col gap-7 p-14">
+        <p class="text-4xl font-bold">News from TUM</p>
+        <p>
+          News, research results and events: everything that enthuses people at
+          our university.
+        </p>
+        <button class="text-white font-bold w-[100px] h-[50px] bg-blue-500">
+          SEE ALL
+        </button>
+      </div>
+      <div class="lg:flex gap-6 px-14">
+      <div class="group">
+        <div class="relative">
+        <img
+      
+          src="https://www.tum.de/fileadmin/_processed_/1/4/csm_230712_beresfotografie-pressefoto-halle-arzt-lg_71bfe147cd.webp"
+        />
+        <div class="absolute bottom-0 z-0">
+            <p class="bg-slate-200 px-1 py-1 font-light group-hover:text-blue-400 ">research</p>
+        </div>
+    </div>
+        <div class="flex flex-col gap-3 py-4 group-hover:text-blue-400 ">
+          <h2 class="font-medium">Study at 21 dialysis centers</h2>
+          <h1 class="font-semibold text-xl max-w-xs-">Exercise during dialysis has positive health impact</h1>
+          <h3 class="max-w-sm ">
+            Patients who engage in light exercise while undergoing dialysis are
+            physically fitter and are admitted to hospital less...
+          </h3>
+          <div class="flex justify-between">
+            <p>07/14/2023</p>
+            <p>Reading time 3 min.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+        <img
+      
+          src="https://www.tum.de/fileadmin/_processed_/1/4/csm_230712_beresfotografie-pressefoto-halle-arzt-lg_71bfe147cd.webp"
+        />
+        <div class="absolute bottom-0 z-0">
+            <p class="bg-slate-200 px-1 py-1 font-light ">research</p>
+        </div></div>
+        <div class="flex flex-col gap-3 py-4 ">
+          <h2 class="font-medium">Study at 21 dialysis centers</h2>
+          <h1 class="font-semibold text-xl max-w-xs-">Exercise during dialysis has positive health impact</h1>
+          <h3 class="max-w-sm ">
+            Patients who engage in light exercise while undergoing dialysis are
+            physically fitter and are admitted to hospital less...
+          </h3>
+          <div class="flex justify-between">
+            <p>07/14/2023</p>
+            <p>Reading time 3 min.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+        <img
+      
+          src="https://www.tum.de/fileadmin/_processed_/1/4/csm_230712_beresfotografie-pressefoto-halle-arzt-lg_71bfe147cd.webp"
+        />
+        <div class="absolute bottom-0 z-0">
+            <p class="bg-slate-200 px-1 py-1 font-light ">research</p>
+        </div></div>
+        <div class="flex flex-col gap-3 py-4 ">
+          <h2 class="font-medium">Study at 21 dialysis centers</h2>
+          <h1 class="font-semibold text-xl max-w-xs-">Exercise during dialysis has positive health impact</h1>
+          <h3 class="max-w-sm ">
+            Patients who engage in light exercise while undergoing dialysis are
+            physically fitter and are admitted to hospital less...
+          </h3>
+          <div class="flex justify-between">
+            <p>07/14/2023</p>
+            <p>Reading time 3 min.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative">
+        <img
+      
+          src="https://www.tum.de/fileadmin/_processed_/1/4/csm_230712_beresfotografie-pressefoto-halle-arzt-lg_71bfe147cd.webp"
+        />
+        <div class="absolute bottom-0 z-0">
+            <p class="bg-slate-200 px-1 py-1 font-light ">research</p>
+        </div></div>
+        <div class="flex flex-col gap-3 py-4 ">
+          <h2 class="font-medium">Study at 21 dialysis centers</h2>
+          <h1 class="font-semibold text-xl max-w-xs-">Exercise during dialysis has positive health impact</h1>
+          <h3 class="max-w-sm ">
+            Patients who engage in light exercise while undergoing dialysis are
+            physically fitter and are admitted to hospital less...
+          </h3>
+          <div class="flex justify-between">
+            <p>07/14/2023</p>
+            <p>Reading time 3 min.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="relative flex">
+        <div class="px-14 py-9">
+        <img src="https://www.tum.de/fileadmin/_processed_/8/1/csm_csm_20211111_Presidential_student_Lunch_Garching_AE_Z_-1004_64e4d1584d_4b7c164f6e.webp">
+         </div>
+       <div class="absolute bg-blue-500 text-white w-[700px] h-[300px] bottom-24 right-3 flex flex-col gap-3 py-10 px-7">
+            <h1 class="text-4xl font-bold">What drives us: President Thomas F.fofmann about TUM</h1>
+            <h3>
+                Research and innovations for society, innovative teaching and continuing
+                 education: This is how we shape a sustainable future, relying on the intelligence of 
+                 the entire university and working closely with global partners to do so.
+                
+                </h3>
+                <div class="w-[200px] h-[40px]"><button class="text-blue-500 bg-white p-5 font-bold"> READ MORE</button></div>
+        </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
